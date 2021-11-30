@@ -11,9 +11,8 @@
 
                     {{-- Call to actions --}}
                     <div class="mb-3 text-center">
-                        <div class="space-y-3 lg:space-y-0 lg:grid lg:grid-cols-2 lg:gap-3">
-                            <a href="#" class="block w-full px-4 py-2 border border-transparent rounded-md font-semibold text-base tracking-widest transition ease-in-out duration-150 bg-purple-500 hover:bg-purple-600 text-white focus:outline-none focus:ring-2 focus:ring-offset-1 focus:border-purple-200 ring-purple-500 focus:ring-opacity-50">Get Started</a>
-                            <a href="#" class="btn btn-white">Learn More</a>
+                        <div class="lg:grid lg:grid-cols-2">
+                            <a href="#" class="block px-4 py-2 border border-transparent rounded-md font-semibold text-base tracking-widest transition ease-in-out duration-150 bg-blue-600 hover:bg-blue-700 text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:border-blue-600 ring-blue-600 focus:ring-opacity-50">Getting Started</a>
                         </div>
                     </div>
 
