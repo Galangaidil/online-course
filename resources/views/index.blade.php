@@ -12,7 +12,7 @@
                     {{-- Call to actions --}}
                     <div class="mb-3 text-center">
                         <div class="space-y-3 lg:space-y-0 lg:grid lg:grid-cols-2 lg:gap-3">
-                            <a href="#" class="btn btn-black">Get Started</a>
+                            <a href="#" class="block w-full px-4 py-2 border border-transparent rounded-md font-semibold text-base tracking-widest transition ease-in-out duration-150 bg-purple-500 hover:bg-purple-600 text-white focus:outline-none focus:ring-2 focus:ring-offset-1 focus:border-purple-200 ring-purple-500 focus:ring-opacity-50">Get Started</a>
                             <a href="#" class="btn btn-white">Learn More</a>
                         </div>
                     </div>
