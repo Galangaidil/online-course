@@ -19,7 +19,7 @@ if (App::environment('production')) {
 
 Route::get('/', function () {
     return view('index');
-});
+})->middleware('guest');
 
 Route::get('/dashboard', function () {
     return view('dashboard');

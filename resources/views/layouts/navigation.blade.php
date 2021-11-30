@@ -6,7 +6,7 @@
                 <!-- Logo -->
                 <div class="flex-shrink-0 flex items-center">
                     <a href="/">
-                        <x-application-logo class="block h-10 w-auto text-gray-700" />
+                        <x-application-logo class="block h-10 w-auto text-blue-600" />
                     </a>
                 </div>
 
@@ -76,7 +76,7 @@
                         <a href="{{ route('login') }}"
                             class="inline-flex items-center px-4 py-2 bg-gray-100 border border-transparent rounded-md font-medium text-xs text-gray-800 uppercase tracking-widest hover:bg-gray-300 active:bg-white focus:outline-none focus:border-gray-900 focus:ring ring-gray-300 disabled:opacity-25 transition ease-in-out duration-150">Login</a>
                         <a href="{{ route('register') }}"
-                            class="inline-flex items-center px-4 py-2 bg-gray-800 border border-transparent rounded-md font-medium text-xs text-white uppercase tracking-widest hover:bg-gray-700 active:bg-gray-900 focus:outline-none focus:border-gray-900 focus:ring ring-gray-300 disabled:opacity-25 transition ease-in-out duration-150">Register</a>
+                            class="inline-flex items-center px-4 py-2 bg-blue-600 border border-transparent rounded-md font-medium text-xs text-white uppercase tracking-widest hover:bg-blue-700 focus:outline-none focus:border-blue-600 focus:ring ring-blue-200 disabled:opacity-25 transition ease-in-out duration-150">Register</a>
                     </div>
                 </div>
                 @endguest
@@ -131,7 +131,7 @@
         @guest
         <div class="px-4 py-4 grid grid-cols-2 gap-3 justify-items-center text-center">
             <a href="/register"
-                class="w-full px-4 py-2 bg-gray-800 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-gray-700 active:bg-gray-900 focus:outline-none focus:border-gray-900 focus:ring ring-gray-300 disabled:opacity-25 transition ease-in-out duration-150">Register</a>
+                class="w-full px-4 py-2 bg-blue-600 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-blue-700 focus:outline-none focus:border-blue-600 focus:ring ring-blue-200 disabled:opacity-25 transition ease-in-out duration-150">Register</a>
             <a href="/login"
                 class="w-full px-4 py-2 bg-gray-100 border border-transparent rounded-md font-semibold text-xs text-gray-800 uppercase tracking-widest hover:bg-gray-300 active:bg-white focus:outline-none focus:border-gray-900 focus:ring ring-gray-300 disabled:opacity-25 transition ease-in-out duration-150">Login</a>
         </div>
