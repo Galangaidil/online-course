@@ -233,4 +233,50 @@
         </div>
     </section>
 
+    {{-- Section Products --}}
+    <section class="py-12">
+        <div class="max-w-7xl mx-auto">
+            <div class="bg-white rounded-lg shadow">
+                <div class="flex flex-col lg:grid lg:grid-cols-2 lg:gap-3 lg:place-items-center mb-3">
+                    <div class="px-4 py-4">
+                        <div class="mb-3">
+                            <h1 class="text-xl lg:text-3xl font-bold text-blue-600">Our Goal is to help students grow and succeed</h1>
+                        </div>
+                        <div class="mb-6">
+                            <p class="text-gray-400 text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur adipisci facilis minima?
+                                Iste sequi facilis culpa laboriosam, eveniet exercitationem similique!</p>
+                        </div>
+                        <div class="mb-3">
+                            <a class="px-4 py-2 bg-blue-600 text-white rounded-lg" href="#">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="p-4 lg:p-0">
+                        <img class="rounded lg:rounded-tr lg:rounded-br" src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                            alt="">
+                    </div>
+                </div>
+
+                <div class="border-b border-gray-100 mb-3 "></div>
+
+                <div class="flex flex-col lg:grid lg:grid-cols-2 lg:gap-3 lg:place-items-center">
+                    <div class="px-4 py-4 lg:order-last">
+                        <div class="mb-3">
+                            <h1 class="text-xl lg:text-3xl font-bold text-blue-600">We help you to build you're skills and connections </h1>
+                        </div>
+                        <div class="mb-6">
+                            <p class="text-gray-400 text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur adipisci facilis minima?
+                                Iste sequi facilis culpa laboriosam, eveniet exercitationem similique!</p>
+                        </div>
+                        <div class="mb-3">
+                            <a class="px-4 py-2 bg-blue-600 text-white rounded-lg" href="#">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="p-4 lg:p-0">
+                        <img class="rounded lg:rounded-tr lg:rounded-br" src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                            alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </x-home-layout>
