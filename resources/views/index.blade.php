@@ -44,173 +44,125 @@
                     business to grow bigger</p>
             </div>
 
-            {{-- Card --}}
             <div class="flex flex-col space-y-3 lg:space-y-0 lg:grid lg:grid-cols-3 lg:gap-3">
 
-                <div class="px-6 py-8 bg-white rounded-md shadow">
+                {{-- Pricing Card Free--}}
+                <x-pricing-card>
                     {{-- Title --}}
-                    <div class="mb-3 block">
-                        <h2 class="uppercase text-lg font-bold text-gray-800">Free</h2>
-                        <p class="text-3xl text-gray-700 font-bold">0,00 IDR <span
-                                class="text-gray-400 text-base font-normal">/ Month</span></p>
-                    </div>
+                    <x-pricing-title>
+                        {{__('Free')}}
+                        <x-slot name="price">
+                            0,00
+                        </x-slot>
+                    </x-pricing-title>
 
                     {{-- image --}}
-                    <div class="mb-3">
-                        <img class="rounded h-60 w-full" src="img/undraw_startup_life_re_8ow9.svg" alt="">
-                    </div>
+                    <x-pricing-image>{{__('img/undraw_startup_life_re_8ow9.svg')}}</x-pricing-image>
 
                     {{-- List --}}
-                    <div class="mb-3">
-                        <ul>
-                            <li class="flex space-x-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-400"
-                                    viewBox="0 0 20 20" fill="currentColor">
-                                    <path fill-rule="evenodd"
-                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                        clip-rule="evenodd" />
-                                </svg>
-                                <p class="text-gray-800">Lorem ipsum dolor sit amet.</p>
-                            </li>
-                            <li class="flex space-x-2 text-gray-400">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20"
-                                    fill="currentColor">
-                                    <path fill-rule="evenodd"
-                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                        clip-rule="evenodd" />
-                                </svg>
-                                <p>Lorem ipsum dolor sit amet.</p>
-                            </li>
-                            <li class="flex space-x-2 text-gray-400">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20"
-                                    fill="currentColor">
-                                    <path fill-rule="evenodd"
-                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                        clip-rule="evenodd" />
-                                </svg>
-                                <p>Lorem ipsum dolor sit amet.</p>
-                            </li>
-                        </ul>
-                    </div>
+                    <x-pricing-lists>
+                        <x-list>
+                            <x-check-logo class="h-5 w-5 text-green-400" />
+                            <x-slot name="keuntungan">
+                                <p class="text-gray-900">Lorem, ipsum dolor.</p>
+                            </x-slot>
+                        </x-list>
+                        <x-list>
+                            <x-check-logo class="h-5 w-5 text-gray-400" />
+                            <x-slot name="keuntungan">
+                                <p class="text-gray-400">Chat Support</p>
+                            </x-slot>
+                        </x-list>
+                        <x-list>
+                            <x-check-logo class="h-5 w-5 text-gray-400" />
+                            <x-slot name="keuntungan">
+                                <p class="text-gray-400">Bantuan langsung</p>
+                            </x-slot>
+                        </x-list>
+                    </x-pricing-lists>
 
                     {{-- CTA --}}
-                    <div class="mb-3 py-6 flex justify-center">
-                        <button
-                            class="px-12 py-3 bg-transparent hover:bg-green-400 border border-green-400 text-green-400 hover:text-white rounded text-base font-bold focus:outline-none focus:bg-green-400 focus:text-white">Choose
-                            Plan</button>
-                    </div>
+                    <x-pricing-button />
+                </x-pricing-card>
 
-                </div>
-
-                <div class="px-6 py-8 bg-white rounded-md shadow">
+                {{-- Pricing Card Regular--}}
+                <x-pricing-card>
                     {{-- Title --}}
-                    <div class="mb-3 block">
-                        <h2 class="uppercase text-lg font-bold text-gray-800">Regular</h2>
-                        <p class="text-3xl text-gray-700 font-bold">99,000 IDR <span
-                                class="text-gray-400 text-base font-normal">/ Month</span></p>
-                    </div>
+                    <x-pricing-title>
+                        {{__('Regular')}}
+                        <x-slot name="price">
+                            99,000
+                        </x-slot>
+                    </x-pricing-title>
 
                     {{-- image --}}
-                    <div class="mb-3">
-                        <img class="rounded h-60 w-full" src="img/undraw_pair_programming_re_or4x.svg" alt="">
-                    </div>
+                    <x-pricing-image>{{__('img/undraw_pair_programming_re_or4x.svg')}}</x-pricing-image>
 
                     {{-- List --}}
-                    <div class="mb-3">
-                        <ul>
-                            <li class="flex space-x-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-400"
-                                    viewBox="0 0 20 20" fill="currentColor">
-                                    <path fill-rule="evenodd"
-                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                        clip-rule="evenodd" />
-                                </svg>
-                                <p class="text-gray-800">Lorem ipsum dolor sit amet.</p>
-                            </li>
-                            <li class="flex space-x-2 text-gray-400">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-400"
-                                    viewBox="0 0 20 20" fill="currentColor">
-                                    <path fill-rule="evenodd"
-                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                        clip-rule="evenodd" />
-                                </svg>
-                                <p class="text-gray-800">Lorem ipsum dolor sit amet.</p>
-                            </li>
-                            <li class="flex space-x-2 text-gray-400">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20"
-                                    fill="currentColor">
-                                    <path fill-rule="evenodd"
-                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                        clip-rule="evenodd" />
-                                </svg>
-                                <p>Lorem ipsum dolor sit amet.</p>
-                            </li>
-                        </ul>
-                    </div>
+                    <x-pricing-lists>
+                        <x-list>
+                            <x-check-logo class="h-5 w-5 text-green-400" />
+                            <x-slot name="keuntungan">
+                                <p class="text-gray-900">Lorem, ipsum dolor.</p>
+                            </x-slot>
+                        </x-list>
+                        <x-list>
+                            <x-check-logo class="h-5 w-5 text-green-400" />
+                            <x-slot name="keuntungan">
+                                <p class="text-gray-900">Chat Support</p>
+                            </x-slot>
+                        </x-list>
+                        <x-list>
+                            <x-check-logo class="h-5 w-5 text-gray-400" />
+                            <x-slot name="keuntungan">
+                                <p class="text-gray-400">Bantuan langsung</p>
+                            </x-slot>
+                        </x-list>
+                    </x-pricing-lists>
 
                     {{-- CTA --}}
-                    <div class="mb-3 py-6 flex justify-center">
-                        <button
-                            class="px-12 py-3 bg-transparent hover:bg-green-400 border border-green-400 text-green-400 hover:text-white rounded text-base font-bold focus:outline-none focus:bg-green-400 focus:text-white">Choose
-                            Plan</button>
-                    </div>
+                    <x-pricing-button />
+                </x-pricing-card>
 
-                </div>
-
-                <div class="px-6 py-8 bg-white rounded-md shadow">
+                {{-- Pricing Card Pro--}}
+                <x-pricing-card>
                     {{-- Title --}}
-                    <div class="mb-3 block">
-                        <h2 class="uppercase text-lg font-bold text-gray-800">Pro</h2>
-                        <p class="text-3xl text-gray-700 font-bold">149,000 IDR <span
-                                class="text-gray-400 text-base font-normal">/ Month</span></p>
-                    </div>
+                    <x-pricing-title>
+                        {{__('pro')}}
+                        <x-slot name="price">
+                            149,000
+                        </x-slot>
+                    </x-pricing-title>
 
                     {{-- image --}}
-                    <div class="mb-3">
-                        <img class="rounded h-60 w-full" src="img/undraw_maker_launch_crhe.svg" alt="">
-                    </div>
+                    <x-pricing-image>{{__('img/undraw_maker_launch_crhe.svg')}}</x-pricing-image>
+
 
                     {{-- List --}}
-                    <div class="mb-3">
-                        <ul>
-                            <li class="flex space-x-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-400"
-                                    viewBox="0 0 20 20" fill="currentColor">
-                                    <path fill-rule="evenodd"
-                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                        clip-rule="evenodd" />
-                                </svg>
-                                <p class="text-gray-800">Lorem ipsum dolor sit amet.</p>
-                            </li>
-                            <li class="flex space-x-2 text-gray-400">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-400"
-                                    viewBox="0 0 20 20" fill="currentColor">
-                                    <path fill-rule="evenodd"
-                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                        clip-rule="evenodd" />
-                                </svg>
-                                <p class="text-gray-800">Lorem ipsum dolor sit amet.</p>
-                            </li>
-                            <li class="flex space-x-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-400"
-                                    viewBox="0 0 20 20" fill="currentColor">
-                                    <path fill-rule="evenodd"
-                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                        clip-rule="evenodd" />
-                                </svg>
-                                <p class="text-gray-800">Lorem ipsum dolor sit amet.</p>
-                            </li>
-                        </ul>
-                    </div>
+                    <x-pricing-lists>
+                        <x-list>
+                            <x-check-logo class="h-5 w-5 text-green-400" />
+                            <x-slot name="keuntungan">
+                                <p class="text-gray-900">Lorem, ipsum dolor.</p>
+                            </x-slot>
+                        </x-list>
+                        <x-list>
+                            <x-check-logo class="h-5 w-5 text-green-400" />
+                            <x-slot name="keuntungan">
+                                <p class="text-gray-900">Chat Support</p>
+                            </x-slot>
+                        </x-list>
+                        <x-list>
+                            <x-check-logo class="h-5 w-5 text-green-400" />
+                            <x-slot name="keuntungan">
+                                <p class="text-gray-900">Bantuan langsung</p>
+                            </x-slot>
+                        </x-list>
+                    </x-pricing-lists>
 
                     {{-- CTA --}}
-                    <div class="mb-3 py-6 flex justify-center">
-                        <button
-                            class="px-12 py-3 bg-transparent hover:bg-green-400 border border-green-400 text-green-400 hover:text-white rounded text-base font-bold focus:outline-none focus:bg-green-400 focus:text-white">Choose
-                            Plan</button>
-                    </div>
-
-                </div>
+                    <x-pricing-button />
+                </x-pricing-card>
 
             </div>
         </div>
@@ -240,10 +192,12 @@
                 <div class="flex flex-col lg:grid lg:grid-cols-2 lg:gap-3 lg:place-items-center mb-3">
                     <div class="px-4 py-4">
                         <div class="mb-3">
-                            <h1 class="text-xl lg:text-3xl font-bold text-blue-600">Our Goal is to help students grow and succeed</h1>
+                            <h1 class="text-xl lg:text-3xl font-bold text-blue-600">Our Goal is to help students grow
+                                and succeed</h1>
                         </div>
                         <div class="mb-6">
-                            <p class="text-gray-400 text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur adipisci facilis minima?
+                            <p class="text-gray-400 text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Consequatur adipisci facilis minima?
                                 Iste sequi facilis culpa laboriosam, eveniet exercitationem similique!</p>
                         </div>
                         <div class="mb-3">
@@ -251,7 +205,8 @@
                         </div>
                     </div>
                     <div class="p-4 lg:p-0">
-                        <img class="rounded lg:rounded-tr lg:rounded-br" src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                        <img class="rounded lg:rounded-tr lg:rounded-br"
+                            src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
                             alt="">
                     </div>
                 </div>
@@ -261,10 +216,12 @@
                 <div class="flex flex-col lg:grid lg:grid-cols-2 lg:gap-3 lg:place-items-center">
                     <div class="px-4 py-4 lg:order-last">
                         <div class="mb-3">
-                            <h1 class="text-xl lg:text-3xl font-bold text-blue-600">We help you to build you're skills and connections </h1>
+                            <h1 class="text-xl lg:text-3xl font-bold text-blue-600">We help you to build you're skills
+                                and connections </h1>
                         </div>
                         <div class="mb-6">
-                            <p class="text-gray-400 text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur adipisci facilis minima?
+                            <p class="text-gray-400 text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Consequatur adipisci facilis minima?
                                 Iste sequi facilis culpa laboriosam, eveniet exercitationem similique!</p>
                         </div>
                         <div class="mb-3">
@@ -272,7 +229,8 @@
                         </div>
                     </div>
                     <div class="p-4 lg:p-0">
-                        <img class="rounded lg:rounded-tr lg:rounded-br" src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                        <img class="rounded lg:rounded-tr lg:rounded-br"
+                            src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
                             alt="">
                     </div>
                 </div>
