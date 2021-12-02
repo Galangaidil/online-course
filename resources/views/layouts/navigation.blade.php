@@ -22,16 +22,7 @@
                 @guest
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
                     <x-nav-link href="#">
-                        {{ __('Achievement') }}
-                    </x-nav-link>
-                    <x-nav-link href="#">
-                        {{ __('Product') }}
-                    </x-nav-link>
-                    <x-nav-link href="#">
-                        {{ __('Features') }}
-                    </x-nav-link>
-                    <x-nav-link href="#">
-                        {{ __('Pricing') }}
+                        {{ __('Courses') }}
                     </x-nav-link>
                 </div>
                 @endguest
@@ -74,9 +65,9 @@
                 <div class="flex">
                     <div class="hidden space-x-3 sm:-my-px sm:ml-10 sm:flex">
                         <a href="{{ route('login') }}"
-                            class="inline-flex items-center px-4 py-2 bg-gray-100 border border-transparent rounded-md font-medium text-xs text-gray-800 uppercase tracking-widest hover:bg-gray-300 active:bg-white focus:outline-none focus:border-gray-900 focus:ring ring-gray-300 disabled:opacity-25 transition ease-in-out duration-150">Login</a>
+                            class="inline-flex items-center px-4 py-2 bg-white border border-transparent rounded-md font-medium text-xs text-blue-600 uppercase tracking-widest hover:bg-blue-100 active:bg-blue-200 focus:outline-none focus:border-blue-200 focus:ring ring-blue-200 disabled:opacity-25 transition ease-in-out duration-150">Log in</a>
                         <a href="{{ route('register') }}"
-                            class="inline-flex items-center px-4 py-2 bg-blue-600 border border-transparent rounded-md font-medium text-xs text-white uppercase tracking-widest hover:bg-blue-700 focus:outline-none focus:border-blue-600 focus:ring ring-blue-200 disabled:opacity-25 transition ease-in-out duration-150">Register</a>
+                            class="inline-flex items-center px-4 py-2 bg-blue-600 border border-transparent rounded-md font-medium text-sm text-white capitalize tracking-normal hover:bg-blue-700 focus:outline-none focus:border-blue-600 focus:ring ring-blue-200 disabled:opacity-25 transition ease-in-out duration-150">Daftar Gratis</a>
                     </div>
                 </div>
                 @endguest
@@ -137,16 +128,7 @@
         </div>
         <div class="pt-2 pb-3 pace-y-1">
             <x-responsive-nav-link href="#">
-                {{ __('Achievement') }}
-            </x-responsive-nav-link>
-            <x-responsive-nav-link href="#">
-                {{ __('Product') }}
-            </x-responsive-nav-link>
-            <x-responsive-nav-link href="#">
-                {{ __('Features') }}
-            </x-responsive-nav-link>
-            <x-responsive-nav-link href="#">
-                {{ __('Pricing') }}
+                {{ __('Courses') }}
             </x-responsive-nav-link>
         </div>
         @endguest
