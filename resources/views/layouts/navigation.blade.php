@@ -21,7 +21,7 @@
 
                 @guest
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                    <x-nav-link href="#">
+                    <x-nav-link :href="route('courses')" :active="request()->routeIs('courses')">
                         {{ __('Courses') }}
                     </x-nav-link>
                 </div>
@@ -127,7 +127,7 @@
                 class="w-full px-4 py-2 bg-gray-100 border border-transparent rounded-md font-semibold text-xs text-gray-800 uppercase tracking-widest hover:bg-gray-300 active:bg-white focus:outline-none focus:border-gray-900 focus:ring ring-gray-300 disabled:opacity-25 transition ease-in-out duration-150">Login</a>
         </div>
         <div class="pt-2 pb-3 pace-y-1">
-            <x-responsive-nav-link href="#">
+            <x-responsive-nav-link :href="route('courses')" :active="request()->routeIs('courses')">
                 {{ __('Courses') }}
             </x-responsive-nav-link>
         </div>
