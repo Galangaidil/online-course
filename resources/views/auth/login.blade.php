@@ -2,7 +2,7 @@
     <x-auth-card>
         <x-slot name="logo">
             <a href="/">
-                <x-application-logo class="w-20 h-20 text-gray-800" />
+                <x-application-logo class="w-20 h-20 text-blue-500" />
             </a>
         </x-slot>
 
@@ -42,7 +42,7 @@
 
             <div class="flex items-center justify-between mt-4">
                 @if (Route::has('register'))
-                    <a class="text-sm text-gray-600 hover:text-gray-900" href="{{ route('register') }}">
+                    <a class="text-sm text-blue-500 hover:text-blue-700" href="{{ route('register') }}">
                         {{ __('Create Account') }}
                     </a>
                 @endif
