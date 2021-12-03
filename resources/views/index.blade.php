@@ -1,7 +1,7 @@
 <x-home-layout>
     {{-- Section Hero --}}
     <div class="py-12 bg-white border-b border-gray-200"
-        style="background-image: url('https://images.unsplash.com/photo-1579547621706-1a9c79d5c9f1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80'); background-size: cover">
+        style="background-image: url('{{ asset('img/bg-gradient.avif') }}'); background-size: cover">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="px-4 flex flex-col lg:grid lg:grid-cols-2 lg:gap-3 lg:place-items-center">
                 <div class="text-center lg:text-left">
@@ -30,13 +30,12 @@
                 {{-- Hero Image --}}
                 <div class="mb-3 flex justify-center">
                     <img class="rounded-xl shadow"
-                        src="https://images.unsplash.com/photo-1531545514256-b1400bc00f31?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+                        src="{{ asset('img/hero.avif') }}"
                         alt="">
                 </div>
             </div>
         </div>
     </div>
-
 
     {{-- Section mitra --}}
     <section class="py-12">
@@ -220,7 +219,7 @@
                     </div>
                     <div class="p-4 lg:p-0">
                         <img class="rounded lg:rounded-tr lg:rounded-br"
-                            src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                            src="{{ asset('img/studi.avif') }}"
                             alt="">
                     </div>
                 </div>
@@ -244,7 +243,7 @@
                     </div>
                     <div class="p-4 lg:p-0">
                         <img class="rounded lg:rounded-tr lg:rounded-br"
-                            src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                            src="{{ asset('img/ketawa.avif') }}"
                             alt="">
                     </div>
                 </div>
