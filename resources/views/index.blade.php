@@ -250,4 +250,6 @@
             </div>
         </div>
     </section>
+
+    @include('layouts.footer')
 </x-home-layout>
