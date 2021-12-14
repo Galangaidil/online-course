@@ -20,4 +20,6 @@
         </div>
     </div>
 
+    @include('layouts.footer')
+
 </x-home-layout>

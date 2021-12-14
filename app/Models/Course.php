@@ -17,4 +17,9 @@ class Course extends Model
      protected $fillable = [
          'title', 'slug', 'deskripsi', 'thumbnail'
      ];
+
+     public function getRouteKeyName()
+    {
+        return 'slug';
+    }
 }

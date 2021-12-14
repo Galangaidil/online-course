@@ -26,6 +26,7 @@ Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
 
-Route::get('courses', [CourseController::class, 'index'])->name('courses');
+Route::get('/courses', [CourseController::class, 'index'])->name('courses');
+Route::get('/courses/{course:slug}', [CourseController::class, 'show']);
 
 require __DIR__.'/auth.php';
