@@ -22,4 +22,9 @@ class Course extends Model
     {
         return 'slug';
     }
+
+    public function detailCourse()
+    {
+        return $this->hasMany(detailCourse::class);
+    }
 }
