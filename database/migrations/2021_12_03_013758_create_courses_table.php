@@ -20,6 +20,7 @@ class CreateCoursesTable extends Migration
             $table->mediumText('deskripsi');
             $table->string('thumbnail');
             $table->boolean('isPro')->default(0);
+            $table->string('video');
             $table->timestamps();
         });
     }

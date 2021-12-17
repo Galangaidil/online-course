@@ -865,9 +865,6 @@ select {
 .z-50 {
 	z-index: 50;
 }
-.order-1 {
-	order: 1;
-}
 .col-span-1 {
 	grid-column: span 1 / span 1;
 }
@@ -1942,8 +1939,8 @@ select {
 		display: grid;
 	}
 
-	.lg\:h-96 {
-		height: 24rem;
+	.lg\:h-screen {
+		height: 100vh;
 	}
 
 	.lg\:grid-cols-6 {

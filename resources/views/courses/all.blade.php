@@ -1,7 +1,7 @@
 <div class="max-w-sm rounded bg-white hover:bg-gray-100 overflow-hidden shadow-2xl relative">
     <a href="/courses/{{ $course->slug }}">
         <div class="mb-6">
-            <img class="h-56 w-full inset-0"
+            <img class="h-48 w-full inset-0"
                 src="{{ $course->thumbnail }}"
                 alt="" />
         </div>
