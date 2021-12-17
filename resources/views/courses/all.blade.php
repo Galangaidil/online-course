@@ -6,8 +6,12 @@
                 alt="" />
         </div>
 
-        <div class="absolute top-0  right-0 p-4">
-            <span class="text-green-600 bg-green-200  rounded-full px-4 py-2">Web Development</span>
+        <div class="absolute top-0 right-0 p-4">
+            @if ( $course->isPro == 0 )
+                <x-badge-free />
+            @else
+                <x-badge-pro />
+            @endif
         </div>
 
         <div class="px-4 mb-3">

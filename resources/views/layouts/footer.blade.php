@@ -1,6 +1,6 @@
-<footer class="bg-gray-100 pb-5">
+<footer class="bg-gray-100">
   <div class="max-w-7xl mx-auto">
-    <div class="bg-white rounded-lg px-4 py-12">
+    <div class="px-4 py-12">
       <div class="flex flex-col-reverse md:flex-row justify-center md:justify-between items-center gap-4">
         <div class="flex gap-2 items-center">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-blue-600" fill="none" viewBox="0 0 24 24"

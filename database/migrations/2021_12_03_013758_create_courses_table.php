@@ -19,6 +19,7 @@ class CreateCoursesTable extends Migration
             $table->string('slug')->unique();
             $table->mediumText('deskripsi');
             $table->string('thumbnail');
+            $table->boolean('isPro')->default(0);
             $table->timestamps();
         });
     }
