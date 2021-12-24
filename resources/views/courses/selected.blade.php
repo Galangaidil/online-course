@@ -3,11 +3,11 @@
         <div class="max-w-7xl mx-auto">
             <div class="flex flex-col-reverse lg:grid lg:grid-cols-6 gap-4 p-6">
                 <div class="lg:col-span-1">
-                    <h3 class="text-gray-900 font-bold text-center">Chapter</h3>
+                    <h3 class="text-gray-900 font-bold text-center lg:text-left">Chapter</h3>
                     <ul class="py-2">
                         @forelse ($course->detailCourse as $item)
-                        <li class="block text-gray-500 hover:text-gray-700 text-base">
-                            {{ $item->modul }}
+                        <li class="block text-gray-500 hover:text-blue-500 hover:bg-blue-100 rounded text-lg py-1 px-3">
+                            <a href="/courses/{{ $course->slug }}/{{ $item->slug }}">{{ $loop->index + 1 }} {{ $item->chapter }}</a>
                         </li>
                         @empty
                         <p>No modul found</p>
@@ -30,6 +30,4 @@
             </div>
         </div>
     </div>
-
-    {{-- @include('layouts.footer') --}}
 </x-home-layout>

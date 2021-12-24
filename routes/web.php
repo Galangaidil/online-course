@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CourseController;
+use App\Models\Course;
+use App\Models\detailCourse;
 
 /*
 |--------------------------------------------------------------------------
@@ -27,6 +29,7 @@ Route::get('/dashboard', function () {
 })->middleware(['auth'])->name('dashboard');
 
 Route::get('/courses', [CourseController::class, 'index'])->name('courses');
-Route::get('/courses/{course:slug}', [CourseController::class, 'show']);
+Route::get('/courses/{course}', [CourseController::class, 'show']);
+Route::get('/courses/{course}/{detailcourse}', [CourseController::class, 'detail']);
 
 require __DIR__.'/auth.php';

@@ -40,5 +40,24 @@ class DatabaseSeeder extends Seeder
             'thumbnail' => 'https://ichi.pro/assets/images/max/724/1*KzSyurAkoy2xr1RecfChvA.png',
             'video' => 'https://www.youtube.com/embed/_uQrJ0TkZlc'
         ]);
+
+        detailCourse::create([
+            'course_id' => '1',
+            'chapter' => 'Learn CSS',
+            'slug' => 'learn-css',
+            'video' => 'https://www.youtube.com/embed/1Rs2ND1ryYc',
+        ]);
+        detailCourse::create([
+            'course_id' => '1',
+            'chapter' => 'Box Model',
+            'slug' => 'box-model',
+            'video' => 'https://www.youtube.com/embed/1PnVor36_40',
+        ]);
+        detailCourse::create([
+            'course_id' => '1',
+            'chapter' => 'Selectors',
+            'slug' => 'selectors',
+            'video' => 'https://www.youtube.com/embed/l1mER1bV0N0',
+        ]);
     }
 }

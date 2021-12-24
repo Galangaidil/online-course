@@ -11,12 +11,12 @@ class detailCourse extends Model
 
     protected $guarded = ['id'];
 
-    /**
-     * Get the course that owns the detailCourse
-     *
-     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
-     */
-    public function course(): BelongsTo
+    public function getRouteKeyName()
+    {
+        return 'slug';
+    }
+
+    public function course()
     {
         return $this->belongsTo(Course::class);
     }

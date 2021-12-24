@@ -18,9 +18,9 @@ class CreateDetailCoursesTable extends Migration
             $table->foreignId('course_id')
                 ->references('id')
                 ->on('courses');
-            $table->string('modul');
+            $table->string('chapter');
+            $table->string('slug')->unique();
             $table->string('video');
-            $table->string('deskripsi');
             $table->timestamps();
         });
     }

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Course;
+use App\Models\detailCourse;
 
 class CourseController extends Controller
 {
@@ -85,5 +86,13 @@ class CourseController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+    public function detail(Course $course, detailCourse $detailcourse)
+    {
+        return view('courses.modul', [
+            'data' => $detailcourse,
+            'chapter' => $course
+        ]);
     }
 }
