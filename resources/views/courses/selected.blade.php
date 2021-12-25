@@ -8,8 +8,9 @@
                     <h3 class="text-gray-900 text-xl font-light text-center lg:text-left px-3">Chapter</h3>
                     <ul class="py-2">
                         @forelse ($course->detailCourse as $item)
-                        <li class="block text-gray-500 hover:text-blue-500 hover:bg-blue-100 {{ Request::is('courses/'.$course->slug.'/'.$item->slug) ? 'text-blue-500 !bg-blue-100' : '' }} rounded text-lg py-1 px-3 mb-1">
-                            <a href="/courses/{{ $course->slug }}/{{ $item->slug }}">
+                        <li>
+                            <a class="block text-gray-500 hover:text-blue-500 hover:bg-blue-100 {{ Request::is('courses/'.$course->slug.'/'.$item->slug) ? 'text-blue-500 !bg-blue-100' : '' }} rounded text-lg py-1 px-3 mb-1"
+                                href="/courses/{{ $course->slug }}/{{ $item->slug }}">
                                 {{ $loop->index + 1 }}
                                 {{ $item->chapter }}
                             </a>
