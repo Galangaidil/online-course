@@ -90,9 +90,9 @@ class CourseController extends Controller
 
     public function detail(Course $course, detailCourse $detailcourse)
     {
-        return view('courses.modul', [
+        return view('courses.selected', [
             'data' => $detailcourse,
-            'chapter' => $course
+            'course' => $course
         ]);
     }
 }
