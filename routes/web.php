@@ -29,7 +29,7 @@ Route::get('/dashboard', function () {
 })->middleware(['auth'])->name('dashboard');
 
 Route::get('/courses', [CourseController::class, 'index'])->name('courses');
-Route::get('/courses/{course}', [CourseController::class, 'show']);
-Route::get('/courses/{course}/{detailcourse}', [CourseController::class, 'detail']);
+Route::get('/courses/{course}', [CourseController::class, 'show'])->middleware(['auth']);
+Route::get('/courses/{course}/{detailcourse}', [CourseController::class, 'detail'])->middleware(['auth']);
 
-require __DIR__.'/auth.php';
+require __DIR__ . '/auth.php';
