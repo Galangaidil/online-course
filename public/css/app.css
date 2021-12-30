@@ -902,26 +902,11 @@ select {
 .ml-4 {
 	margin-left: 1rem;
 }
-.ml-2 {
-	margin-left: 0.5rem;
-}
-.mr-1 {
-	margin-right: 0.25rem;
-}
-.mb-5 {
-	margin-bottom: 1.25rem;
-}
-.mb-6 {
-	margin-bottom: 1.5rem;
-}
-.mt-6 {
-	margin-top: 1.5rem;
-}
-.mb-1 {
-	margin-bottom: 0.25rem;
-}
 .mr-2 {
 	margin-right: 0.5rem;
+}
+.ml-2 {
+	margin-left: 0.5rem;
 }
 .mt-8 {
 	margin-top: 2rem;
@@ -931,6 +916,21 @@ select {
 }
 .-mt-px {
 	margin-top: -1px;
+}
+.mb-5 {
+	margin-bottom: 1.25rem;
+}
+.mr-1 {
+	margin-right: 0.25rem;
+}
+.mb-6 {
+	margin-bottom: 1.5rem;
+}
+.mt-6 {
+	margin-top: 1.5rem;
+}
+.mb-1 {
+	margin-bottom: 0.25rem;
 }
 .block {
 	display: block;
@@ -971,11 +971,11 @@ select {
 .h-20 {
 	height: 5rem;
 }
-.h-48 {
-	height: 12rem;
-}
 .h-8 {
 	height: 2rem;
+}
+.h-48 {
+	height: 12rem;
 }
 .max-h-full {
 	max-height: 100%;
@@ -1013,6 +1013,12 @@ select {
 .max-w-7xl {
 	max-width: 80rem;
 }
+.max-w-xl {
+	max-width: 36rem;
+}
+.max-w-6xl {
+	max-width: 72rem;
+}
 .max-w-lg {
 	max-width: 32rem;
 }
@@ -1021,12 +1027,6 @@ select {
 }
 .max-w-sm {
 	max-width: 24rem;
-}
-.max-w-6xl {
-	max-width: 72rem;
-}
-.max-w-xl {
-	max-width: 36rem;
 }
 .flex-1 {
 	flex: 1 1 0%;
@@ -1175,11 +1175,11 @@ select {
 .border-l-4 {
 	border-left-width: 4px;
 }
-.border-b-2 {
-	border-bottom-width: 2px;
-}
 .border-r {
 	border-right-width: 1px;
+}
+.border-b-2 {
+	border-bottom-width: 2px;
 }
 .border-gray-300 {
 	--tw-border-opacity: 1;
@@ -1200,13 +1200,13 @@ select {
 	--tw-border-opacity: 1;
 	border-color: rgba(129, 140, 248, var(--tw-border-opacity));
 }
-.border-green-400 {
-	--tw-border-opacity: 1;
-	border-color: rgba(52, 211, 153, var(--tw-border-opacity));
-}
 .border-gray-400 {
 	--tw-border-opacity: 1;
 	border-color: rgba(156, 163, 175, var(--tw-border-opacity));
+}
+.border-green-400 {
+	--tw-border-opacity: 1;
+	border-color: rgba(52, 211, 153, var(--tw-border-opacity));
 }
 .bg-white {
 	--tw-bg-opacity: 1;
@@ -1269,6 +1269,9 @@ select {
 }
 .p-6 {
 	padding: 1.5rem;
+}
+.p-32 {
+	padding: 8rem;
 }
 .p-4 {
 	padding: 1rem;
@@ -1347,14 +1350,14 @@ select {
 .pr-4 {
 	padding-right: 1rem;
 }
+.pt-8 {
+	padding-top: 2rem;
+}
 .pt-1 {
 	padding-top: 0.25rem;
 }
 .pt-6 {
 	padding-top: 1.5rem;
-}
-.pt-8 {
-	padding-top: 2rem;
 }
 .text-center {
 	text-align: center;
@@ -1374,21 +1377,21 @@ select {
 	font-size: 1rem;
 	line-height: 1.5rem;
 }
-.text-xl {
-	font-size: 1.25rem;
+.text-lg {
+	font-size: 1.125rem;
 	line-height: 1.75rem;
 }
 .text-3xl {
 	font-size: 1.875rem;
 	line-height: 2.25rem;
 }
-.text-lg {
-	font-size: 1.125rem;
-	line-height: 1.75rem;
-}
 .text-4xl {
 	font-size: 2.25rem;
 	line-height: 2.5rem;
+}
+.text-xl {
+	font-size: 1.25rem;
+	line-height: 1.75rem;
 }
 .text-2xl {
 	font-size: 1.5rem;
@@ -1433,11 +1436,11 @@ select {
 .tracking-normal {
 	letter-spacing: 0em;
 }
-.tracking-tight {
-	letter-spacing: -0.025em;
-}
 .tracking-wider {
 	letter-spacing: 0.05em;
+}
+.tracking-tight {
+	letter-spacing: -0.025em;
 }
 .text-gray-500 {
 	--tw-text-opacity: 1;
@@ -1479,6 +1482,18 @@ select {
 	--tw-text-opacity: 1;
 	color: rgba(59, 130, 246, var(--tw-text-opacity));
 }
+.text-gray-200 {
+	--tw-text-opacity: 1;
+	color: rgba(229, 231, 235, var(--tw-text-opacity));
+}
+.text-gray-300 {
+	--tw-text-opacity: 1;
+	color: rgba(209, 213, 219, var(--tw-text-opacity));
+}
+.text-gray-900 {
+	--tw-text-opacity: 1;
+	color: rgba(17, 24, 39, var(--tw-text-opacity));
+}
 .text-indigo-600 {
 	--tw-text-opacity: 1;
 	color: rgba(79, 70, 229, var(--tw-text-opacity));
@@ -1490,10 +1505,6 @@ select {
 .text-green-600 {
 	--tw-text-opacity: 1;
 	color: rgba(5, 150, 105, var(--tw-text-opacity));
-}
-.text-gray-900 {
-	--tw-text-opacity: 1;
-	color: rgba(17, 24, 39, var(--tw-text-opacity));
 }
 .text-transparent {
 	color: transparent;
@@ -1509,14 +1520,6 @@ select {
 .text-red-600 {
 	--tw-text-opacity: 1;
 	color: rgba(220, 38, 38, var(--tw-text-opacity));
-}
-.text-gray-200 {
-	--tw-text-opacity: 1;
-	color: rgba(229, 231, 235, var(--tw-text-opacity));
-}
-.text-gray-300 {
-	--tw-text-opacity: 1;
-	color: rgba(209, 213, 219, var(--tw-text-opacity));
 }
 .underline {
 	text-decoration: underline;
@@ -1994,6 +1997,11 @@ select {
 		text-align: left;
 	}
 
+	.lg\:text-xl {
+		font-size: 1.25rem;
+		line-height: 1.75rem;
+	}
+
 	.lg\:text-6xl {
 		font-size: 3.75rem;
 		line-height: 1;
@@ -2002,11 +2010,6 @@ select {
 	.lg\:text-3xl {
 		font-size: 1.875rem;
 		line-height: 2.25rem;
-	}
-
-	.lg\:text-xl {
-		font-size: 1.25rem;
-		line-height: 1.75rem;
 	}
 }
 

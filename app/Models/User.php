@@ -41,4 +41,12 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    /**
+     * Get user subscriptions status.
+     */
+    public function Subscription()
+    {
+        return $this->hasOne(Subscription::class);
+    }
 }

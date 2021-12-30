@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Course;
 use App\Models\detailCourse;
+use Illuminate\Support\Facades\Auth;
 
 class CourseController extends Controller
 {
@@ -49,9 +50,26 @@ class CourseController extends Controller
      */
     public function show(Course $course)
     {
-        return view('courses.selected', [
-            'course' => $course
-        ]);
+        $user = Auth::user();
+
+        /**
+         * Cek apakah course ini butuh langganan atau tidak
+         */
+        if ($course->isPro == 1) {
+            if ($user->subscription->status == 1) {
+                return view('courses.selected', [
+                    'course' => $course
+                ]);
+            } else {
+                return view('subscription.index');
+            }
+        }
+
+        if ($course->isPro == 0) {
+            return view('courses.selected', [
+                'course' => $course
+            ]);
+        }
     }
 
     /**
