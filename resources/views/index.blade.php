@@ -19,7 +19,7 @@
                     {{-- Call to actions --}}
                     <div class="mb-3 text-center">
                         <div class="lg:grid lg:grid-cols-2">
-                            <a href="#"
+                            <a href="{{ route('register') }}"
                                 class="block px-4 py-2 border border-transparent rounded-md font-semibold text-base tracking-wider transition ease-in-out duration-150 bg-blue-600 hover:bg-blue-700 text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:border-blue-600 ring-blue-600 focus:ring-opacity-50">
                                 Mulai Sekarang
                             </a>
@@ -29,9 +29,7 @@
 
                 {{-- Hero Image --}}
                 <div class="mb-3 flex justify-center">
-                    <img class="rounded-xl shadow"
-                        src="{{ asset('img/hero.avif') }}"
-                        alt="">
+                    <img class="rounded-xl shadow" src="{{ asset('img/hero.avif') }}" alt="">
                 </div>
             </div>
         </div>
@@ -48,32 +46,32 @@
                     <div class="grid grid-cols-3 gap-3 place-items-center">
                         {{-- Google --}}
                         <x-mitra-image>
-                            {{__('https://dicoding-web-img.sgp1.cdn.digitaloceanspaces.com/original/commons/homepage-partner-google.png')}}
+                            {{ __('https://dicoding-web-img.sgp1.cdn.digitaloceanspaces.com/original/commons/homepage-partner-google.png') }}
                         </x-mitra-image>
 
                         {{-- Aws --}}
                         <x-mitra-image>
-                            {{__('https://dicoding-web-img.sgp1.cdn.digitaloceanspaces.com/original/commons/homepage-partner-aws.png')}}
+                            {{ __('https://dicoding-web-img.sgp1.cdn.digitaloceanspaces.com/original/commons/homepage-partner-aws.png') }}
                         </x-mitra-image>
 
                         {{-- IBM --}}
                         <x-mitra-image>
-                            {{__('https://dicoding-web-img.sgp1.cdn.digitaloceanspaces.com/original/commons/homepage-partner-ibm.png')}}
+                            {{ __('https://dicoding-web-img.sgp1.cdn.digitaloceanspaces.com/original/commons/homepage-partner-ibm.png') }}
                         </x-mitra-image>
 
                         {{-- Kampus Merdeka --}}
                         <x-mitra-image>
-                            {{__('https://dicoding-web-img.sgp1.cdn.digitaloceanspaces.com/original/commons/homepage-partner-kampus-merdeka.png')}}
+                            {{ __('https://dicoding-web-img.sgp1.cdn.digitaloceanspaces.com/original/commons/homepage-partner-kampus-merdeka.png') }}
                         </x-mitra-image>
 
                         {{-- Bangkit --}}
                         <x-mitra-image>
-                            {{__('https://dicoding-web-img.sgp1.cdn.digitaloceanspaces.com/original/commons/homepage-partner-bangkit.png')}}
+                            {{ __('https://dicoding-web-img.sgp1.cdn.digitaloceanspaces.com/original/commons/homepage-partner-bangkit.png') }}
                         </x-mitra-image>
 
                         {{-- Microsoft --}}
                         <x-mitra-image>
-                            {{__('https://dicoding-web-img.sgp1.cdn.digitaloceanspaces.com/original/commons/homepage-partner-microsoft.png')}}
+                            {{ __('https://dicoding-web-img.sgp1.cdn.digitaloceanspaces.com/original/commons/homepage-partner-microsoft.png') }}
                         </x-mitra-image>
                     </div>
                 </div>
@@ -82,7 +80,7 @@
     </section>
 
     {{-- Section Pricing --}}
-    <section class="py-12">
+    <section class="py-12" id="pricing">
         <div class="max-w-7xl mx-auto px-8 sm:px-6 lg:px-8">
             {{-- Title --}}
             <div class="block text-center mb-3">
@@ -94,11 +92,11 @@
 
             <div class="max-w-3xl mx-auto">
                 <div class="flex flex-col space-y-3 lg:space-y-0 lg:grid lg:grid-cols-2 lg:gap-3">
-                    {{-- Pricing Card Paket dasar--}}
+                    {{-- Pricing Card Paket dasar --}}
                     <x-pricing-card>
                         {{-- Title --}}
                         <x-pricing-title>
-                            {{__('Paket Dasar')}}
+                            {{ __('Paket Dasar') }}
                             <x-slot name="price">
                                 0
                             </x-slot>
@@ -109,7 +107,7 @@
                         </div>
 
                         {{-- image --}}
-                        <x-pricing-image>{{__('img/undraw_startup_life_re_8ow9.svg')}}</x-pricing-image>
+                        <x-pricing-image>{{ __('img/undraw_startup_life_re_8ow9.svg') }}</x-pricing-image>
                         {{-- List --}}
                         <x-pricing-lists>
                             <x-list>
@@ -135,22 +133,23 @@
                         <x-pricing-button />
                     </x-pricing-card>
 
-                    {{-- Pricing Card Academica Plus--}}
+                    {{-- Pricing Card Academica Plus --}}
                     <x-pricing-card>
                         {{-- Title --}}
                         <x-pricing-title>
-                            {{__('Academica Plus')}}
+                            {{ __('Academica Plus') }}
                             <x-slot name="price">
                                 149,000
                             </x-slot>
                         </x-pricing-title>
 
                         <div class="mb-3">
-                            <p class="text-gray-400 text-sm">Materi dirancang dalam bentuk studi kasus, dengan penjelasan yang detail dan mendalam.</p>
+                            <p class="text-gray-400 text-sm">Materi dirancang dalam bentuk studi kasus, dengan
+                                penjelasan yang detail dan mendalam.</p>
                         </div>
 
                         {{-- image --}}
-                        <x-pricing-image>{{__('img/undraw_maker_launch_crhe.svg')}}</x-pricing-image>
+                        <x-pricing-image>{{ __('img/undraw_maker_launch_crhe.svg') }}</x-pricing-image>
                         {{-- List --}}
                         <x-pricing-lists>
                             <x-list>
@@ -192,7 +191,8 @@
                     <p class="text-blue-200">Dunia pemrograman yang seru menunggu Anda.</p>
                 </div>
                 <div class="mb-3">
-                    <a class="px-8 py-2 bg-white text-blue-600 rounded hover:bg-blue-100" href="/register">Mulai Sekarang</a>
+                    <a class="px-8 py-2 bg-white text-blue-600 rounded hover:bg-blue-100" href="/register">Mulai
+                        Sekarang</a>
                 </div>
             </div>
         </div>
@@ -218,9 +218,7 @@
                         </div>
                     </div>
                     <div class="p-4 lg:p-0">
-                        <img class="rounded lg:rounded-tr lg:rounded-br"
-                            src="{{ asset('img/studi.avif') }}"
-                            alt="">
+                        <img class="rounded lg:rounded-tr lg:rounded-br" src="{{ asset('img/studi.avif') }}" alt="">
                     </div>
                 </div>
 
@@ -242,9 +240,7 @@
                         </div>
                     </div>
                     <div class="p-4 lg:p-0">
-                        <img class="rounded lg:rounded-tr lg:rounded-br"
-                            src="{{ asset('img/ketawa.avif') }}"
-                            alt="">
+                        <img class="rounded lg:rounded-tr lg:rounded-br" src="{{ asset('img/ketawa.avif') }}" alt="">
                     </div>
                 </div>
             </div>

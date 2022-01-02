@@ -61,7 +61,7 @@ class CourseController extends Controller
                     'course' => $course
                 ]);
             } else {
-                return view('subscription.index');
+                return redirect()->route('pricing');
             }
         }
 

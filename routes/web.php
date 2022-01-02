@@ -1,9 +1,9 @@
 <?php
 
+use Illuminate\Support\Facades\App;
+use Illuminate\Support\Facades\URL;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CourseController;
-use App\Models\Course;
-use App\Models\detailCourse;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,11 +22,15 @@ if (App::environment('production')) {
 
 Route::get('/', function () {
     return view('index');
-})->middleware('guest');
+});
 
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
+
+Route::get('/pricing', function () {
+    return view('pricing');
+})->name('pricing');
 
 Route::get('/courses', [CourseController::class, 'index'])->name('courses');
 Route::get('/courses/{course}', [CourseController::class, 'show'])->middleware(['auth']);

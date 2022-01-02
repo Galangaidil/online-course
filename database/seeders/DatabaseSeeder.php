@@ -136,7 +136,7 @@ class DatabaseSeeder extends Seeder
             'course_id' => '2',
             'chapter' => 'Functions',
             'slug' => 'functions',
-            'video' => 'https://www.youtube.com/emved/dld5ZKHYxC0'
+            'video' => 'https://www.youtube.com/embed/dld5ZKHYxC0'
         ]);
         detailCourse::create([
             'course_id' => '2',
