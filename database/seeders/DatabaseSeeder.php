@@ -119,5 +119,36 @@ class DatabaseSeeder extends Seeder
             'slug' => 'outline',
             'video' => 'https://www.youtube.com/embed/l1mER1bV0N0',
         ]);
+
+        detailCourse::create([
+            'course_id' => '2',
+            'chapter' => 'Introduction',
+            'slug' => 'introduction',
+            'video' => 'https://www.youtube.com/embed/HOVjUKNHAcI'
+        ]);
+        detailCourse::create([
+            'course_id' => '2',
+            'chapter' => 'Conditionals',
+            'slug' => 'conditionals',
+            'video' => 'https://www.youtube.com/embed/IsG4Xd6LlsM'
+        ]);
+        detailCourse::create([
+            'course_id' => '2',
+            'chapter' => 'Functions',
+            'slug' => 'functions',
+            'video' => 'https://www.youtube.com/emved/dld5ZKHYxC0'
+        ]);
+        detailCourse::create([
+            'course_id' => '2',
+            'chapter' => 'Scope',
+            'slug' => 'scope',
+            'video' => 'https://www.youtube.com/embed/hTU1OSbnov8'
+        ]);
+        detailCourse::create([
+            'course_id' => '2',
+            'chapter' => 'Arrays',
+            'slug' => 'arrays',
+            'video' => 'https://www.youtube.com/embed/pDSz3sWnPRw'
+        ]);
     }
 }

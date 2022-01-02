@@ -9,6 +9,13 @@ class Subscription extends Model
 {
     use HasFactory;
 
+    protected $fillable = [
+        'user_id',
+        'status',
+        'subscription_start',
+        'subscription_end'
+    ];
+
     /**
      * Get the user subscriptions status
      */
