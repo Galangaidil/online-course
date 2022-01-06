@@ -25,15 +25,19 @@ Route::get('/', function () {
 });
 
 Route::get('/dashboard', function () {
-    return view('dashboard');
+    return view('dashboard.index');
 })->middleware(['auth'])->name('dashboard');
 
 Route::get('/pricing', function () {
     return view('pricing');
 })->name('pricing');
 
-Route::get('/courses', [CourseController::class, 'index'])->name('courses');
-Route::get('/courses/{course}', [CourseController::class, 'show'])->middleware(['auth']);
-Route::get('/courses/{course}/{detailcourse}', [CourseController::class, 'detail'])->middleware(['auth']);
+Route::prefix('courses')->group(function () {
+    Route::get('/', [CourseController::class, 'index'])->name('courses');
+    Route::get('/{course}', [CourseController::class, 'show'])->middleware(['auth']);
+    Route::get('/{course}/{detailcourse}', [CourseController::class, 'detail'])->middleware(['auth']);
+});
+
+Route::get('/dashboard/create', [CourseController::class, 'create'])->middleware(['auth']);
 
 require __DIR__ . '/auth.php';
