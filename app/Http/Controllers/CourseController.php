@@ -97,7 +97,10 @@ class CourseController extends Controller
      */
     public function edit($id)
     {
-        //
+        $course = Course::findOrFail($id);
+        return view('dashboard.edit', [
+            'courses' => $course
+        ]);
     }
 
     /**
