@@ -17,10 +17,10 @@ class CreateCoursesTable extends Migration
             $table->id();
             $table->string('judul');
             $table->string('slug')->unique();
-            $table->mediumText('deskripsi');
-            $table->string('thumbnail');
+            $table->mediumText('deskripsi')->nullable();
+            $table->string('thumbnail')->nullable();
             $table->boolean('isPro')->default(0);
-            $table->string('video');
+            $table->string('video')->nullable();
             $table->timestamps();
         });
     }
