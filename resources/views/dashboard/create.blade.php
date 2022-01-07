@@ -13,7 +13,7 @@
                     <div class="max-w-md mx-auto">
                         <x-auth-validation-errors class="mb-4 bg-red-100 p-4 rounded-lg" :errors="$errors" />
 
-                        <form action="{{ route('create') }}" method="post">
+                        <form action="{{ route('create') }}" method="post" enctype="multipart/form-data">
                             @csrf
 
                             <!-- Judul -->
@@ -21,13 +21,6 @@
                                 <x-label for="judul" :value="__('Judul')" />
                                 <x-input id="judul" class="block mt-1 w-full" type="text" name="judul"
                                     :value="old('judul')" required autofocus />
-                            </div>
-
-                            <!-- slug -->
-                            <div class="mt-4">
-                                <x-label for="slug" :value="__('Slug')" />
-                                <x-input id="slug" class="block mt-1 w-full" type="text" name="slug" :value="old('slug')"
-                                    required />
                             </div>
 
                             <!-- Deskripsi -->

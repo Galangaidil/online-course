@@ -41,18 +41,22 @@ class CourseController extends Controller
     {
         $request->validate([
             'judul' => 'required|string',
-            'slug' => 'required|string',
             'deskripsi' => 'required|string',
             'isPro' => 'required',
-            'thumbnail' => 'required|string',
+            'thumbnail' => 'required|image|file|max:5120',
             'video' => 'required|string'
         ]);
+
+        $newThumbnail = time() . '-' . $request->judul . '.' . $request->thumbnail->extension();
+        $request->thumbnail->move(public_path('img/courses'), $newThumbnail);
+
+
 
         Course::create([
             'judul' => $request->judul,
             'slug' => $request->slug,
             'deskripsi' => $request->deskripsi,
-            'thumbnail' => $request->thumbnail,
+            'thumbnail' => $newThumbnail,
             'video' => $request->video,
         ]);
 

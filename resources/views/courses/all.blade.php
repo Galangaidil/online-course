@@ -1,13 +1,11 @@
 <div class="max-w-sm rounded bg-white hover:bg-gray-100 overflow-hidden shadow-2xl relative">
     <a href="/courses/{{ $course->slug }}">
         <div class="mb-6">
-            <img class="h-48 w-full inset-0"
-                src="{{ $course->thumbnail }}"
-                alt="" />
+            <img class="h-48 w-full inset-0" src="{{ asset('img/courses') . '/' . $course->thumbnail }}" alt="" />
         </div>
 
         <div class="absolute top-0 right-0 p-4">
-            @if ( $course->isPro == 0 )
+            @if ($course->isPro == 0)
                 <x-badge-free />
             @else
                 <x-badge-pro />
