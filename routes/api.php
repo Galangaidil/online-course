@@ -18,6 +18,3 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
-
-Route::get('/dashboard/courses', [CourseManagementController::class, 'index']);
-Route::post('/dashboard/courses', [CourseManagementController::class, 'store'])->name('create');

@@ -24,10 +24,6 @@ Route::get('/', function () {
     return view('index');
 });
 
-Route::get('/dashboard', function () {
-    return view('dashboard.index');
-})->middleware(['auth'])->name('dashboard');
-
 Route::get('/pricing', function () {
     return view('pricing');
 })->name('pricing');
@@ -38,6 +34,13 @@ Route::prefix('courses')->group(function () {
     Route::get('/{course}/{detailcourse}', [CourseController::class, 'detail'])->middleware(['auth']);
 });
 
-Route::get('/dashboard/create', [CourseController::class, 'create'])->middleware(['auth']);
+Route::middleware(['auth'])->group(function () {
+    Route::get('/dashboard', function () {
+        return view('dashboard.index');
+    })->name('dashboard');
+
+    Route::get('/dashboard/create', [CourseController::class, 'create']);
+    Route::post('/dashboard/courses', [CourseController::class, 'store'])->name('create');
+});
 
 require __DIR__ . '/auth.php';

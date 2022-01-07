@@ -39,7 +39,23 @@ class CourseController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'judul' => 'required|string',
+            'slug' => 'required|string',
+            'deskripsi' => 'required|string',
+            'thumbnail' => 'required|string',
+            'video' => 'required|string'
+        ]);
+
+        Course::create([
+            'judul' => $request->judul,
+            'slug' => $request->slug,
+            'deskripsi' => $request->deskripsi,
+            'thumbnail' => $request->thumbnail,
+            'video' => $request->video,
+        ]);
+
+        return redirect()->route('courses');
     }
 
     /**
