@@ -42,7 +42,7 @@
                                 <x-label for="cost" :value="__('Cost')" />
                                 <select name="isPro" id="cost"
                                     class="block w-full rounded-md shadow-sm border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
-                                    <option value="0">Free</option>
+                                    <option value="0" selected>Free</option>
                                     <option value="1">Pro</option>
                                 </select>
                             </div>
@@ -60,8 +60,8 @@
                                 <x-label for="video" :value="__('Video ID')" />
                                 <div class="flex">
                                     <div
-                                        class="mt-1 flex items-center justify-center w-full text-xs text-gray-900 bg-gray-200 rounded-tl rounded-bl rounded-r-none">
-                                        https://www.youtube.com/embed/</div>
+                                        class="mt-1 flex items-center justify-center px-2 text-xs text-gray-900 bg-gray-200 rounded-tl rounded-bl rounded-r-none">
+                                        youtube.com/embed/</div>
                                     <x-input id="video" class="block mt-1 w-full rounded-l-none" type="text"
                                         name="video" :value="old('video')" required />
                                 </div>

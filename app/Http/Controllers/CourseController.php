@@ -43,6 +43,7 @@ class CourseController extends Controller
             'judul' => 'required|string',
             'slug' => 'required|string',
             'deskripsi' => 'required|string',
+            'isPro' => 'required',
             'thumbnail' => 'required|string',
             'video' => 'required|string'
         ]);
