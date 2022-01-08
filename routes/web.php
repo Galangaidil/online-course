@@ -39,7 +39,7 @@ Route::middleware(['auth'])->group(function () {
         return view('dashboard.index');
     })->name('dashboard');
 
-    Route::get('/dashboard/create', [CourseController::class, 'create']);
+    Route::get('/dashboard/create', [CourseController::class, 'create'])->name('showCreateForm');
     Route::post('/dashboard/courses', [CourseController::class, 'store'])->name('create');
     Route::get('/dashboard/courses/{id}', [CourseController::class, 'edit']);
 });

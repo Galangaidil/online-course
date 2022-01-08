@@ -3,6 +3,9 @@
         <h2 class="font-semibold text-lg lg:text-xl text-gray-800 leading-tight text-center lg:text-left">
             {{ __('Selamat datang ') . Auth::user()->name }}
         </h2>
+        <div class="mt-4">
+            <a class="px-4 py-2 rounded bg-blue-600 text-white text-sm" href="{{ route('showCreateForm') }}">New</a>
+        </div>
     </x-slot>
 
     <div class="py-12">
