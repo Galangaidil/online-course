@@ -41,7 +41,7 @@ Route::middleware(['auth'])->group(function () {
 
     Route::get('/dashboard/create', [CourseController::class, 'create'])->name('showCreateForm');
     Route::post('/dashboard/courses', [CourseController::class, 'store'])->name('create');
-    Route::get('/dashboard/courses/{id}', [CourseController::class, 'edit']);
+    Route::get('/dashboard/edit/{id}', [CourseController::class, 'edit'])->name('showEditForm');
 });
 
 require __DIR__ . '/auth.php';

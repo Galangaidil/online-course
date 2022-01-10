@@ -23,13 +23,6 @@
                                     :value="$courses->judul" required autofocus />
                             </div>
 
-                            <!-- slug -->
-                            <div class="mt-4">
-                                <x-label for="slug" :value="__('Slug')" />
-                                <x-input id="slug" class="block mt-1 w-full" type="text" name="slug"
-                                    :value="$courses->slug" required />
-                            </div>
-
                             <!-- Deskripsi -->
                             <div class="mt-4">
                                 <x-label for="deskripsi" :value="__('Deskripsi')" />

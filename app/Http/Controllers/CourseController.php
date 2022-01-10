@@ -114,7 +114,18 @@ class CourseController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $rules = [
+            'judul' => 'required|string',
+            'deskripsi' => 'required|string',
+            'isPro' => 'required|numeric',
+            'thumbnail' => 'required|image|file|max:5120',
+            'video' => 'required|string'
+        ];
+
+        $validData = $request->validate($rules);
+
+        Course::where('id', $id)
+            ->update($validData);
     }
 
     /**
@@ -125,7 +136,7 @@ class CourseController extends Controller
      */
     public function destroy($id)
     {
-        //
+        Course::destroy($id);
     }
 
     public function detail(Course $course, detailCourse $detailcourse)
